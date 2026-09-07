@@ -1,0 +1,55 @@
+/* Variables de la Marca */
+:root {
+  --bg-navy: #0F172A;
+  --color-electric: #2563EB;
+  --color-cyan: #06B6D4;
+  --color-neutral: #F8FAFC;
+  --text-slate: #94A3B8;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #0F172A;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Colores de Fondo y Texto Personalizados */
+.bg-navy { background-color: var(--bg-navy) !important; }
+.bg-electric { background-color: var(--color-electric) !important; }
+.bg-cyan { background-color: var(--color-cyan) !important; }
+.bg-neutral { background-color: var(--color-neutral) !important; }
+.bg-light-section { background-color: #F1F5F9; }
+
+.text-navy { color: var(--bg-navy) !important; }
+.text-electric { color: var(--color-electric) !important; }
+.text-cyan { color: var(--color-cyan) !important; }
+.text-slate { color: var(--text-slate) !important; }
+
+.fs-7 { font-size: 0.825rem; }
+
+/* Botones */
+.btn-electric {
+  background-color: var(--color-electric);
+  color: #ffffff;
+  border: none;
+}
+.btn-electric:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+/* Cajas de Colores y Tarjetas */
+.color-box {
+  height: 100px;
+}
+
+.card-custom {
+  transition: transform 0.2s ease-in-out;
+}
+.card-custom:hover {
+  transform: translateY(-5px);
+}
