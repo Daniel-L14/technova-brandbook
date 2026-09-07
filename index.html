@@ -3,187 +3,499 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechNova - Dynamic Brand Guidelines</title>
+  <title>PULSE TECH - Ultra Interactive Brand Guidelines</title>
 
-  <!-- Bootstrap 5 CSS CDN -->
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
   
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-obsidian text-light">
 
-  <!-- Barra de Progreso de Scroll Superior -->
-  <div id="scroll-progress" class="bg-cyan"></div>
-
-  <!-- Navegación Sticky Interactiva -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top border-bottom border-dark">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
-        <span class="text-electric">TECH</span><span class="text-white">NOVA</span>
-        <span class="badge bg-electric fs-7 ms-2">BRANDBOOK INTERACTIVO</span>
+  <!-- BARRA FLOTANTE INTERACTIVA DE 10 SECCIONES CON POPUPS HOVER -->
+  <nav class="navbar navbar-expand-xl fixed-top bg-dark-glass py-2 px-3 border-cyan-bottom">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+        <svg width="34" height="34" viewBox="0 0 100 100">
+          <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="#0B0F17" stroke="#00F0FF" stroke-width="6"/>
+          <path d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="50" cy="50" r="7" fill="#6366F1"/>
+        </svg>
+        <span class="font-orbitron fw-bold fs-4 text-white">PULSE<span class="text-cyan">TECH</span></span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+      <button class="navbar-toggler border-cyan" type="button" data-bs-toggle="collapse" data-bs-target="#nav10">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto text-uppercase fs-7 fw-semibold">
-          <li class="nav-item"><a class="nav-link active" href="#hero">01. Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#purpose">02. Propósito</a></li>
-          <li class="nav-item"><a class="nav-link" href="#logo-interactive">03. Logo Kinetic</a></li>
-          <li class="nav-item"><a class="nav-link" href="#colors">04. Color Grid</a></li>
-          <li class="nav-item"><a class="nav-link" href="#downloads">10. Assets</a></li>
+
+      <div class="collapse navbar-collapse" id="nav10">
+        <ul class="navbar-nav mx-auto text-uppercase font-orbitron gap-1">
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-01">01. Telemetría</a>
+            <div class="hover-preview-card shadow-cyan">
+              <i class="bi bi-cpu-fill text-cyan fs-2 mb-2 d-block"></i>
+              <h6 class="text-white fw-bold">Test de Rendimiento</h6>
+              <p class="small text-slate mb-0">Dashboard interactivo de FPS y latencia.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-02">02. Isotipo 3D</a>
+            <div class="hover-preview-card shadow-cyan">
+              <svg width="35" height="35" viewBox="0 0 100 100" class="mb-2">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="#00F0FF" stroke-width="8"/>
+                <path d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="8" stroke-linecap="round"/>
+                <circle cx="50" cy="50" r="8" fill="#6366F1"/>
+              </svg>
+              <h6 class="text-white fw-bold">Modulador 3D</h6>
+              <p class="small text-slate mb-0">Controles de desarme de capas y rotación.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-03">03. Clearspace</a>
+            <div class="hover-preview-card shadow-cyan">
+              <i class="bi bi-aspect-ratio text-cyan fs-2 mb-2 d-block"></i>
+              <h6 class="text-white fw-bold">Espacio Libre (20-45px)</h6>
+              <p class="small text-slate mb-0">Simulador con cotas dinámicas en tiempo real.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-avoid">04. Prohibiciones</a>
+            <div class="hover-preview-card shadow-cyan">
+              <i class="bi bi-slash-circle text-danger fs-2 mb-2 d-block"></i>
+              <h6 class="text-white fw-bold">Probador de Errores</h6>
+              <p class="small text-slate mb-0">8 Botones para probar violaciones de marca.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-cobrand">05. Co-Branding</a>
+            <div class="hover-preview-card shadow-cyan">
+              <i class="bi bi-link-45deg text-cyan fs-2 mb-2 d-block"></i>
+              <h6 class="text-white fw-bold">Generador de Aliados</h6>
+              <p class="small text-slate mb-0">Integra logotipos con NVIDIA, INTEL, etc.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-colors">06. Color</a>
+            <div class="hover-preview-card shadow-cyan">
+              <div class="d-flex justify-content-center gap-1 mb-2">
+                <span class="p-2 bg-cyan rounded-circle"></span>
+                <span class="p-2 bg-indigo rounded-circle"></span>
+              </div>
+              <h6 class="text-white fw-bold">Iluminador Reactivo</h6>
+              <p class="small text-slate mb-0">Copia HEX e ilumina la sección al clic.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-fonts">07. Fuentes</a>
+            <div class="hover-preview-card shadow-cyan">
+              <span class="font-orbitron fs-3 text-cyan d-block">Aa</span>
+              <h6 class="text-white fw-bold">Estudio Tipográfico</h6>
+              <p class="small text-slate mb-0">Ajusta tamaño, peso y texto dinámico.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-icons">08. Iconos</a>
+            <div class="hover-preview-card shadow-cyan">
+              <i class="bi bi-gpu-card text-cyan fs-2 mb-2 d-block"></i>
+              <h6 class="text-white fw-bold">Filtro de Hardware</h6>
+              <p class="small text-slate mb-0">Resalta e inclina categorías de componentes.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-apps">09. Aplicaciones</a>
+            <div class="hover-preview-card shadow-cyan">
+              <i class="bi bi-display text-indigo fs-2 mb-2 d-block"></i>
+              <h6 class="text-white fw-bold">Visor de Mockups</h6>
+              <p class="small text-slate mb-0">Cambia entre modo Día, Noche y Neón.</p>
+            </div>
+          </li>
+          <li class="nav-item nav-hover-item">
+            <a class="nav-link nav-link-readable" href="#sec-10">10. Assets</a>
+            <div class="hover-preview-card shadow-cyan">
+              <i class="bi bi-cloud-arrow-down text-cyan fs-2 mb-2 d-block"></i>
+              <h6 class="text-white fw-bold">Simulador de Descarga</h6>
+              <p class="small text-slate mb-0">Descarga progresiva con barra animada.</p>
+            </div>
+          </li>
         </ul>
       </div>
+
     </div>
   </nav>
 
-  <div class="pt-5"></div>
+  <!-- HERO SECTION -->
+  <section id="hero" class="min-vh-100 d-flex align-items-center position-relative pt-5">
+    <div class="container text-center py-5">
+      <div class="mb-4 d-inline-block position-relative">
+        <svg id="hero-logo-svg" width="160" height="160" viewBox="0 0 100 100" class="pulse-glow cursor-pointer transition-3d" onclick="rotateHeroLogo()">
+          <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="#0B0F17" stroke="#00F0FF" stroke-width="4"/>
+          <path d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="50" cy="50" r="7" fill="#6366F1"/>
+        </svg>
+      </div>
 
-  <!-- 01. Hero Section con Efecto Parallax -->
-  <section id="hero" class="hero-parallax bg-navy text-white text-center py-5 position-relative">
-    <div class="container py-5 hero-content">
-      <span class="badge bg-cyan text-dark fw-bold px-3 py-2 mb-3 reveal-item">DROPBOX-STYLE EXPERIENCE</span>
-      <h1 class="display-2 fw-extrabold mb-3 reveal-item">Identidad Dinámica TechNova</h1>
-      <p class="lead text-slate mb-4 reveal-item">Desplázate hacia abajo para ver cómo la marca cobra vida a través del scroll interactivo.</p>
-      <div class="scroll-indicator mt-4 reveal-item">
-        <i class="bi bi-mouse text-electric fs-1 animated-bounce"></i>
-        <p class="small text-slate mt-2">Haz scroll para ensamblar la marca</p>
+      <h1 class="display-2 font-orbitron fw-bold text-white mb-3">PULSE <span class="text-cyan">TECH</span></h1>
+      <p class="lead text-slate max-w-600 mx-auto mb-4">Manual de Marca Ultra-Interactivo e Identidad de Comercio Tecnológico.</p>
+      
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#sec-03" class="btn btn-cyan-glow px-4 py-3 font-orbitron fw-bold">Probar Clearspace (20px - 45px)</a>
+        <a href="#sec-avoid" class="btn btn-outline-cyan px-4 py-3 font-orbitron fw-bold">Probador de Errores</a>
       </div>
     </div>
   </section>
 
-  <!-- 02. Propósito con Tarjetas Bento Grid -->
-  <section id="purpose" class="py-5 container">
-    <div class="text-center mb-5 reveal-item">
-      <span class="text-electric fw-bold text-uppercase fs-7">02. Mantenimiento del Sistema</span>
-      <h2 class="display-6 fw-bold">Propósito & Pilares Visuales</h2>
-    </div>
-    
-    <div class="row g-4 bento-grid">
-      <div class="col-lg-8 reveal-item">
-        <div class="p-5 bg-navy text-white rounded-4 shadow-lg h-100 bento-card">
-          <span class="badge bg-electric mb-3">Misión Principal</span>
-          <h3 class="display-6 fw-bold mb-3">"Tecnología que conecta tu mundo"</h3>
-          <p class="text-slate">Al igual que los grandes sistemas de diseño interactivo, TechNova integra hardware de alto nivel con un lenguaje estético fluido, limpio y responsivo.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 reveal-item">
-        <div class="p-4 bg-light-section border rounded-4 shadow-sm h-100 bento-card d-flex flex-column justify-content-center">
-          <i class="bi bi-cpu fs-1 text-electric mb-2"></i>
-          <h4 class="fw-bold">Innovación Kinética</h4>
-          <p class="small text-muted mb-0">Componentes modulares adaptables a cualquier dispositivo.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="container py-5">
 
-  <!-- 03. SECCIÓN CLAVE: Ensamble de Logo por Scroll (Estilo Dropbox) -->
-  <section id="logo-interactive" class="py-5 bg-navy text-white position-relative overflow-hidden">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-lg-5 reveal-item">
-          <span class="text-cyan fw-bold text-uppercase fs-7">03. Anatomía Kinética</span>
-          <h2 class="display-5 fw-bold mb-4">Construcción Geométrica</h2>
-          <p class="text-slate">El Isotipo **Nova** está formado por 4 cuadrantes vectoriales que representan expansión tecnológica. Al hacer scroll, la grilla ajusta los componentes hasta lograr la simetría perfecta.</p>
-          <div class="mt-4">
-            <span class="badge border border-cyan text-cyan p-2"><i class="bi bi-sliders me-2"></i>Ensamble dinámico por Scroll</span>
+    <!-- 01. TELEMETRÍA E IDENTIDAD INTERACTIVA -->
+    <section id="sec-01" class="py-5 border-top border-dark">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="text-cyan font-orbitron fw-bold">01. PROPÓSITO DE MARCA</span>
+          <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Dashboard de Rendimiento</h2>
+          <p class="text-slate">PULSE TECH integra hardware de alta velocidad. Usa la consola para ejecutar pruebas de carga sobre el sistema visual.</p>
+          <div class="d-flex gap-2">
+            <button id="btn-benchmark" class="btn btn-outline-cyan font-orbitron py-2 px-3" onclick="runBenchmark()"><i class="bi bi-speedometer2 me-2"></i>Test de Estrés</button>
+            <button class="btn btn-outline-light font-orbitron py-2 px-3" onclick="resetBenchmark()"><i class="bi bi-arrow-counterclockwise me-2"></i>Reiniciar</button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-card-dark border-cyan rounded-4 text-center shadow-lg">
+            <h5 class="font-orbitron text-white">Telemetría UI en Vivo</h5>
+            <div class="row mt-4">
+              <div class="col-4">
+                <span class="text-slate d-block small">Rendimiento</span>
+                <span id="fps-counter" class="display-6 font-orbitron text-cyan">60 FPS</span>
+              </div>
+              <div class="col-4">
+                <span class="text-slate d-block small">Latencia</span>
+                <span id="ping-counter" class="display-6 font-orbitron text-indigo">12 ms</span>
+              </div>
+              <div class="col-4">
+                <span class="text-slate d-block small">Carga CPU</span>
+                <span id="cpu-counter" class="display-6 font-orbitron text-success">14%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. ISOTIPO 3D INTERACTIVO CON CONTROLADORES -->
+    <section id="sec-02" class="py-5 border-top border-dark">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="text-cyan font-orbitron fw-bold">02. ANATOMÍA DEL SÍMBOLO</span>
+          <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Modulador Isotipo 3D</h2>
+          <p class="text-slate">Controla de forma independiente la geometría del hexágono, el trazo en 'Z' y el núcleo cuántico esférico.</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <button class="btn btn-cyan-glow font-orbitron btn-sm" onclick="explodeLayers()">Explosionar Capas</button>
+            <button class="btn btn-outline-cyan font-orbitron btn-sm" onclick="spinDiagonal()">Giro Diagonal 45°</button>
+            <button class="btn btn-outline-light font-orbitron btn-sm" onclick="resetLogo3D()">Restablecer</button>
+          </div>
+          <div class="form-check form-switch text-slate">
+            <input class="form-check-input" type="checkbox" id="toggle-core" checked onchange="toggleCoreSphere()">
+            <label class="form-check-label font-orbitron small" for="toggle-core">Mostrar Núcleo Quantum Esférico</label>
+          </div>
+        </div>
+        <div class="col-lg-7 text-center">
+          <div class="p-5 bg-card-dark border-cyan rounded-4 overflow-hidden shadow-lg">
+            <div id="logo-assembly-box" class="transition-3d d-inline-block">
+              <svg width="180" height="180" viewBox="0 0 100 100">
+                <polygon id="layer-outer" points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="#00F0FF" stroke-width="4" class="transition-3d"/>
+                <path id="layer-pulse" d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" class="transition-3d"/>
+                <circle id="layer-core" cx="50" cy="50" r="8" fill="#6366F1" class="transition-3d"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. CLEARSPACE DINÁMICO (20PX A 45PX) -->
+    <section id="sec-03" class="py-5 border-top border-dark">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="text-cyan font-orbitron fw-bold">03. ZONA DE PROTECCIÓN PERIMETRAL</span>
+        <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Simulador Clearspace (20px – 45px)</h2>
+        <p class="text-slate">Mueve el deslizador para calibrar las cotas de espacio libre en tiempo real sobre ambas configuraciones de la marca.</p>
+
+        <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+          <span class="font-orbitron fs-7 text-slate">Mín: 20px</span>
+          <input type="range" class="form-range max-w-400" id="clearspace-slider" min="20" max="45" value="20" oninput="updateClearspace(this.value)">
+          <span class="font-orbitron fs-7 text-cyan fw-bold">Máx: 45px</span>
+        </div>
+      </div>
+
+      <div class="row g-4 text-center py-3">
+        <!-- Isotipo Solo -->
+        <div class="col-md-6">
+          <h6 class="font-orbitron text-cyan mb-3">Símbolo Hexagonal Z + Esfera</h6>
+          <div id="clearspace-box-symbol" class="d-inline-block position-relative border border-dashed-cyan bg-card-dark rounded-3 transition-all" style="padding: 20px;">
+            <div id="cota-symbol-top" class="cota-tag position-absolute top-0 start-50 translate-middle-x bg-cyan text-dark font-orbitron fs-7 px-2 rounded-bottom">20px (X)</div>
+            
+            <div class="p-3 bg-obsidian border border-secondary rounded-3 d-inline-block">
+              <svg width="60" height="60" viewBox="0 0 100 100">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="#00F0FF" stroke-width="6"/>
+                <path d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="50" cy="50" r="7" fill="#6366F1"/>
+              </svg>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-7 text-center position-relative mt-5 mt-lg-0">
-          <!-- Contenedor del Logo SVG Interactivo -->
-          <div id="logo-assembly-container" class="p-5 rounded-4 bg-dark-card border border-secondary shadow-lg">
-            <svg id="tech-nova-svg" width="220" height="220" viewBox="0 0 100 100" fill="none">
-              <!-- Pieza Norte (Sube/Baja con Scroll) -->
-              <path id="svg-piece-top" d="M50 10 L60 38 L50 48 L40 38 Z" fill="#2563EB"/>
-              <!-- Pieza Sur -->
-              <path id="svg-piece-bottom" d="M50 90 L60 62 L50 52 L40 62 Z" fill="#2563EB"/>
-              <!-- Pieza Este -->
-              <path id="svg-piece-right" d="M90 50 L62 60 L52 50 L62 40 Z" fill="#2563EB"/>
-              <!-- Pieza Oeste -->
-              <path id="svg-piece-left" d="M10 50 L38 60 L48 50 L38 40 Z" fill="#2563EB"/>
-              <!-- Núcleo Cyan Central -->
-              <circle id="svg-piece-center" cx="50" cy="50" r="8" fill="#06B6D4"/>
+        <!-- Marca Completa -->
+        <div class="col-md-6">
+          <h6 class="font-orbitron text-cyan mb-3">Marca Completa con Isotipo y Texto</h6>
+          <div id="clearspace-box-full" class="d-inline-block position-relative border border-dashed-cyan bg-card-dark rounded-3 transition-all" style="padding: 20px;">
+            <div id="cota-full-top" class="cota-tag position-absolute top-0 start-50 translate-middle-x bg-cyan text-dark font-orbitron fs-7 px-2 rounded-bottom">20px (X)</div>
+
+            <div class="p-3 bg-obsidian border border-secondary rounded-3 d-flex align-items-center gap-3">
+              <svg width="45" height="45" viewBox="0 0 100 100">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="#00F0FF" stroke-width="6"/>
+                <path d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="50" cy="50" r="7" fill="#6366F1"/>
+              </svg>
+              <span class="font-orbitron fs-3 fw-bold text-white">PULSE<span class="text-cyan">TECH</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. PROBADOR INTERACTIVO DE USOS PROHIBIDOS (8 CASOS) -->
+    <section id="sec-avoid" class="py-5 border-top border-dark">
+      <span class="text-danger font-orbitron fw-bold">04. MATRIZ DE USOS INCORRECTOS</span>
+      <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Simulador de Errores de Marca</h2>
+      <p class="text-slate mb-4">Haz clic en cualquiera de los 8 botones para forzar la infracción directamente sobre el visor de prueba:</p>
+
+      <!-- Botones controladores de errores -->
+      <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('stretch')">1. Distorsionar</button>
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('rotate')">2. Rotar Diagonal</button>
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('color')">3. Color Rojo</button>
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('circle')">4. Marco Círculo</button>
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('nocore')">5. Quitar Esfera</button>
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('font')">6. Cambiar Fuente</button>
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('shadow')">7. Sombra Gruesa</button>
+        <button class="btn btn-sm btn-outline-danger font-orbitron" onclick="applyErrorStyle('repeat')">8. Repetir Patrón</button>
+        <button class="btn btn-sm btn-outline-light font-orbitron" onclick="applyErrorStyle('reset')">Restablecer Correcto</button>
+      </div>
+
+      <!-- Visor de prueba de error -->
+      <div class="p-5 bg-card-dark border-danger rounded-4 text-center shadow-lg">
+        <div id="error-preview-stage" class="transition-3d py-3 d-inline-block">
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <svg id="bad-svg-element" width="50" height="50" viewBox="0 0 100 100">
+              <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="#00F0FF" stroke-width="6"/>
+              <path d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="6" stroke-linecap="round"/>
+              <circle id="bad-core-dot" cx="50" cy="50" r="7" fill="#6366F1"/>
             </svg>
-            <h3 class="fw-bold mt-4 tracking-widest text-white">TECH<span class="text-electric">NOVA</span></h3>
-            <p id="assembly-status" class="small text-slate mb-0">Estado: <span class="text-cyan">Ensamblado al Scroll</span></p>
+            <span id="bad-text-element" class="font-orbitron fs-2 fw-bold text-white">PULSE<span class="text-cyan">TECH</span></span>
           </div>
         </div>
+        <p id="error-status-label" class="text-slate font-orbitron mt-3 mb-0 small">Estado: <span class="text-success fw-bold">USO CORRECTO APROBADO</span></p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 04. Paleta de Colores Interactiva -->
-  <section id="colors" class="py-5 container">
-    <div class="text-center mb-5 reveal-item">
-      <span class="text-electric fw-bold text-uppercase fs-7">04. Muestras Cromáticas</span>
-      <h2 class="display-6 fw-bold">Paleta de Color Dinámica</h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-3 col-6 reveal-item">
-        <div class="color-tile bg-navy rounded-4 p-4 text-white shadow-sm d-flex flex-column justify-content-between">
-          <span class="fw-bold">Dark Navy</span>
-          <div>
-            <code class="text-slate d-block">#0F172A</code>
-            <small>Fondo Principal</small>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 reveal-item">
-        <div class="color-tile bg-electric rounded-4 p-4 text-white shadow-sm d-flex flex-column justify-content-between">
-          <span class="fw-bold">Electric Blue</span>
-          <div>
-            <code class="text-white-50 d-block">#2563EB</code>
-            <small>Acción e Isotipo</small>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 reveal-item">
-        <div class="color-tile bg-cyan rounded-4 p-4 text-dark shadow-sm d-flex flex-column justify-content-between">
-          <span class="fw-bold">Cyan Green</span>
-          <div>
-            <code class="text-dark-50 d-block">#06B6D4</code>
-            <small>Acentos & Highlights</small>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 reveal-item">
-        <div class="color-tile bg-light border rounded-4 p-4 text-dark shadow-sm d-flex flex-column justify-content-between">
-          <span class="fw-bold">Neutral Gray</span>
-          <div>
-            <code class="text-muted d-block">#F8FAFC</code>
-            <small>Superficie UI</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- 05. GENERADOR DE CO-BRANDING CON ALIADOS -->
+    <section id="sec-cobrand" class="py-5 border-top border-dark">
+      <span class="text-cyan font-orbitron fw-bold">05. GENERADOR DE ALIANZAS</span>
+      <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Co-Branding Interactivo</h2>
+      <p class="text-slate mb-4">Selecciona una marca aliada para previsualizar la alineación oficial con divisor proporcional:</p>
 
-  <!-- 10. Descarga de Assets -->
-  <section id="downloads" class="py-5 bg-navy text-white text-center">
-    <div class="container py-4 reveal-item">
-      <h2 class="display-6 fw-bold mb-3">Obtén el Brandkit Oficial</h2>
-      <p class="text-slate mb-4">Descarga las piezas vectoriales dinámicas para producción gráfica.</p>
-      <button class="btn btn-electric btn-lg px-5 py-3 rounded-pill" onclick="alert('Descargando activos dinámicos SVG...')"><i class="bi bi-download me-2"></i>Descargar Kit SVG (TechNova)</button>
-    </div>
-  </section>
+      <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="setCoBrand('nvidia', 'NVIDIA', 'text-success', 'bi-nvidia')">NVIDIA</button>
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="setCoBrand('intel', 'INTEL CORE', 'text-primary', 'bi-cpu')">INTEL</button>
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="setCoBrand('ryzen', 'AMD RYZEN', 'text-danger', 'bi-fire')">AMD RYZEN</button>
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="setCoBrand('razer', 'RAZER', 'text-success', 'bi-bounding-box')">RAZER</button>
+      </div>
 
-  <footer class="bg-dark text-slate text-center py-4 border-top border-secondary">
-    <div class="container">
-      <small>TechNova Interactive Brandbook © 2026</small>
-    </div>
+      <div class="p-5 bg-card-dark border-cyan rounded-4 text-center shadow-lg">
+        <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+          <div class="d-flex align-items-center gap-2">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+              <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="#00F0FF" stroke-width="6"/>
+              <path d="M30 40 L65 40 L35 60 L70 60" stroke="#00F0FF" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="50" cy="50" r="7" fill="#6366F1"/>
+            </svg>
+            <span class="font-orbitron fs-3 fw-bold text-white">PULSE<span class="text-cyan">TECH</span></span>
+          </div>
+
+          <div class="cobrand-divider"></div>
+
+          <div class="d-flex align-items-center gap-2">
+            <i id="partner-icon" class="bi bi-nvidia display-6 text-success"></i>
+            <span id="partner-name" class="font-orbitron fs-3 fw-bold text-success">NVIDIA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. ILUMINACIÓN REACTIVA DE PALETA DE COLOR -->
+    <section id="sec-colors" class="py-5 border-top border-dark transition-all" id="color-section-bg">
+      <span class="text-cyan font-orbitron fw-bold">06. MUESTRARIO CROMÁTICO</span>
+      <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Iluminador de Fondo al Clic</h2>
+      <p class="text-slate mb-4">Haz clic en cualquier tarjeta de color para iluminar dinámicamente la sección y copiar el código HEX:</p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-obsidian border-cyan rounded-4 color-card cursor-pointer" onclick="activateColorGlow('#0B0F17')">
+            <h5 class="font-orbitron text-white">Obsidian Black</h5>
+            <code class="text-cyan">#0B0F17</code>
+            <small class="d-block text-slate mt-2"><i class="bi bi-copy me-1"></i>Clic para copiar e iluminar</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-cyan text-dark rounded-4 color-card cursor-pointer" onclick="activateColorGlow('#00F0FF')">
+            <h5 class="font-orbitron text-dark">Cyan Neón</h5>
+            <code>#00F0FF</code>
+            <small class="d-block text-dark-50 mt-2"><i class="bi bi-copy me-1"></i>Clic para copiar e iluminar</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-indigo text-white rounded-4 color-card cursor-pointer" onclick="activateColorGlow('#6366F1')">
+            <h5 class="font-orbitron text-white">Deep Indigo</h5>
+            <code class="text-white">#6366F1</code>
+            <small class="d-block text-white-50 mt-2"><i class="bi bi-copy me-1"></i>Clic para copiar e iluminar</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. ESTUDIO TIPOGRÁFICO INTERACTIVO -->
+    <section id="sec-fonts" class="py-5 border-top border-dark">
+      <span class="text-cyan font-orbitron fw-bold">07. ESTUDIO TIPOGRÁFICO</span>
+      <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Estudio de Jerarquías en Vivo</h2>
+      
+      <div class="p-4 bg-card-dark border-cyan rounded-4 shadow-lg">
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label class="font-orbitron text-slate small mb-1">Escribe tu texto personalizado:</label>
+            <input type="text" id="typo-input" class="form-control bg-obsidian text-white border-cyan font-orbitron" value="PULSE TECH GAMING RIG 2026">
+          </div>
+          <div class="col-md-3">
+            <label class="font-orbitron text-slate small mb-1">Escala de Título:</label>
+            <select id="typo-size-select" class="form-select bg-obsidian text-white border-cyan font-orbitron" onchange="changeTypoScale(this.value)">
+              <option value="display-3">H1 Display Super</option>
+              <option value="display-5" selected>H2 Encabezado Principal</option>
+              <option value="fs-3">H3 Subtítulo</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="font-orbitron text-slate small mb-1">Color Neón:</label>
+            <select class="form-select bg-obsidian text-white border-cyan font-orbitron" onchange="changeTypoColor(this.value)">
+              <option value="text-cyan">Cyan Neón</option>
+              <option value="text-white">Blanco Puro</option>
+              <option value="text-indigo">Deep Indigo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="p-4 bg-obsidian border border-secondary rounded-3 text-center">
+          <h2 id="typo-output" class="font-orbitron text-cyan display-5 text-break mb-0">PULSE TECH GAMING RIG 2026</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. FILTRO INTERACTIVO DE ICONOGRAFÍA HARDWARE -->
+    <section id="sec-icons" class="py-5 border-top border-dark">
+      <span class="text-cyan font-orbitron fw-bold">08. FILTRO DE ICONOGRAFÍA</span>
+      <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Categorías de Componentes</h2>
+      <p class="text-slate mb-4">Haz clic en los filtros para destacar y aplicar inclinación 3D sobre las líneas de producto:</p>
+
+      <div class="d-flex justify-content-center gap-2 mb-4">
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="filterIcons('all')">Ver Todos</button>
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="filterIcons('gpu')">GPUs</button>
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="filterIcons('cpu')">CPUs</button>
+      </div>
+
+      <div class="row g-3 text-center">
+        <div class="col-md-3 col-6 icon-card-item" data-cat="gpu">
+          <div class="p-4 bg-card-dark border-cyan rounded-4 shadow-sm">
+            <i class="bi bi-gpu-card text-cyan display-4 d-block mb-2"></i>
+            <h6 class="font-orbitron text-white">Tarjetas Gráficas</h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 icon-card-item" data-cat="cpu">
+          <div class="p-4 bg-card-dark border-cyan rounded-4 shadow-sm">
+            <i class="bi bi-cpu text-cyan display-4 d-block mb-2"></i>
+            <h6 class="font-orbitron text-white">Procesadores</h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 icon-card-item" data-cat="gpu">
+          <div class="p-4 bg-card-dark border-cyan rounded-4 shadow-sm">
+            <i class="bi bi-motherboard text-cyan display-4 d-block mb-2"></i>
+            <h6 class="font-orbitron text-white">Placas Base</h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 icon-card-item" data-cat="cpu">
+          <div class="p-4 bg-card-dark border-cyan rounded-4 shadow-sm">
+            <i class="bi bi-memory text-cyan display-4 d-block mb-2"></i>
+            <h6 class="font-orbitron text-white">Memorias RAM</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. VISOR DE MOCKUPS REALES -->
+    <section id="sec-09" class="py-5 border-top border-dark">
+      <span class="text-cyan font-orbitron fw-bold">09. VISOR DE MOCKUPS REALES</span>
+      <h2 class="display-5 font-orbitron fw-bold text-white mb-3">Aplicación de Marca en Pantalla</h2>
+      <p class="text-slate mb-4">Conmuta el entorno de iluminación para evaluar la visibilidad del logo en exteriores y dispositivos:</p>
+
+      <div class="d-flex justify-content-center gap-2 mb-4">
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="setMockupFilter('normal')">Modo Normal</button>
+        <button class="btn btn-sm btn-outline-cyan font-orbitron" onclick="setMockupFilter('contrast')">Alto Contraste</button>
+      </div>
+
+      <div class="row g-4" id="mockups-container">
+        <!-- Valla Publicitaria -->
+        <div class="col-md-4">
+          <div class="p-3 bg-card-dark border-cyan rounded-4 text-center shadow-lg">
+            <h6 class="font-orbitron text-white mb-3"><i class="bi bi-card-image me-2 text-cyan"></i>Valla Publicitaria</h6>
+            <img src="img/valla.jpg" alt="Valla Publicitaria Exterior PULSE TECH" class="img-fluid rounded-3 mb-2" style="max-height: 220px; object-fit: cover; width: 100%;">
+            <small class="text-slate d-block">Valla publicitaria de gran formato en exterior</small>
+          </div>
+        </div>
+
+        <!-- Móvil App -->
+        <div class="col-md-4">
+          <div class="p-3 bg-card-dark border-cyan rounded-4 text-center shadow-lg">
+            <h6 class="font-orbitron text-white mb-3"><i class="bi bi-phone me-2 text-cyan"></i>Interfaz App Móvil</h6>
+            <img src="img/celular.jpg" alt="App Móvil PULSE TECH" class="img-fluid rounded-3 mb-2" style="max-height: 220px; object-fit: cover; width: 100%;">
+            <small class="text-slate d-block">Aplicación móvil de e-commerce e interfaz de compras</small>
+          </div>
+        </div>
+
+        <!-- Laptop / Computador -->
+        <div class="col-md-4">
+          <div class="p-3 bg-card-dark border-cyan rounded-4 text-center shadow-lg">
+            <h6 class="font-orbitron text-white mb-3"><i class="bi bi-laptop me-2 text-cyan"></i>Plataforma Laptop</h6>
+            <img src="img/laptop.jpg" alt="Plataforma Web Laptop PULSE TECH" class="img-fluid rounded-3 mb-2" style="max-height: 220px; object-fit: cover; width: 100%;">
+            <small class="text-slate d-block">Catálogo web e-commerce en portátil</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- En la Sección 10 de index.html -->
+<section id="sec-10" class="py-5 text-center border-top border-dark">
+  <span class="text-cyan font-orbitron fw-bold">10. RECURSOS Y ASSETS</span>
+  <h2 class="display-5 font-orbitron fw-bold text-white mb-4">Hub Oficial de Recursos</h2>
+  <a href="brandkit.html" target="_blank" class="btn btn-cyan-glow btn-lg px-5 py-3 font-orbitron fw-bold">
+    <i class="bi bi-box-arrow-up-right me-2"></i>Abrir Brandkit e Inspect Assets
+  </a>
+</section>
+
+  <footer class="py-4 bg-card-dark text-center border-top border-dark text-slate">
+    <small>PULSE TECH Brandbook © 2026 - Manual de Identidad Ultra-Interactivo.</small>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom Interactive JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
