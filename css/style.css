@@ -1,9 +1,7 @@
-/* Variables de la Marca */
 :root {
   --bg-navy: #0F172A;
   --color-electric: #2563EB;
   --color-cyan: #06B6D4;
-  --color-neutral: #F8FAFC;
   --text-slate: #94A3B8;
 }
 
@@ -11,45 +9,74 @@ body {
   font-family: 'Inter', sans-serif;
   color: #0F172A;
   background-color: #FFFFFF;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: 'Poppins', sans-serif;
+h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+
+/* Barra de Progreso de Scroll (Top) */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  z-index: 1050;
+  transition: width 0.1s linear;
 }
 
-/* Colores de Fondo y Texto Personalizados */
 .bg-navy { background-color: var(--bg-navy) !important; }
 .bg-electric { background-color: var(--color-electric) !important; }
 .bg-cyan { background-color: var(--color-cyan) !important; }
-.bg-neutral { background-color: var(--color-neutral) !important; }
-.bg-light-section { background-color: #F1F5F9; }
-
-.text-navy { color: var(--bg-navy) !important; }
 .text-electric { color: var(--color-electric) !important; }
 .text-cyan { color: var(--color-cyan) !important; }
 .text-slate { color: var(--text-slate) !important; }
+.bg-dark-card { background-color: #1E293B; }
+.bg-light-section { background-color: #F8FAFC; }
 
-.fs-7 { font-size: 0.825rem; }
+.fs-7 { font-size: 0.8rem; }
 
-/* Botones */
-.btn-electric {
-  background-color: var(--color-electric);
-  color: #ffffff;
-  border: none;
+/* Bento Cards estilo Dropbox */
+.bento-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
 }
-.btn-electric:hover {
-  background-color: #1d4ed8;
-  color: #ffffff;
-}
-
-/* Cajas de Colores y Tarjetas */
-.color-box {
-  height: 100px;
+.bento-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15) !important;
 }
 
-.card-custom {
-  transition: transform 0.2s ease-in-out;
+.color-tile {
+  height: 180px;
+  transition: transform 0.3s ease;
 }
-.card-custom:hover {
-  transform: translateY(-5px);
+.color-tile:hover {
+  transform: scale(1.03);
+}
+
+/* Animación Reveal Scroll */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Piezas del Logo SVG */
+#tech-nova-svg path, #tech-nova-svg circle {
+  transition: transform 0.1s linear;
+  transform-origin: center;
+}
+
+/* Mouse Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+.animated-bounce {
+  animation: bounce 2s infinite;
 }

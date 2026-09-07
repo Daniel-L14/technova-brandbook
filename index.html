@@ -3,352 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechNova - Brand Guidelines & Manual de Marca</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  
+  <title>TechNova - Dynamic Brand Guidelines</title>
+
   <!-- Bootstrap 5 CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar-brandbook" data-bs-offset="100">
+<body>
 
-  <!-- Navegación -->
-  <nav id="navbar-brandbook" class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top shadow-sm">
+  <!-- Barra de Progreso de Scroll Superior -->
+  <div id="scroll-progress" class="bg-cyan"></div>
+
+  <!-- Navegación Sticky Interactiva -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top border-bottom border-dark">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
         <span class="text-electric">TECH</span><span class="text-white">NOVA</span>
-        <span class="badge bg-electric fs-7 ms-2">BRANDBOOK</span>
+        <span class="badge bg-electric fs-7 ms-2">BRANDBOOK INTERACTIVO</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto text-uppercase fs-7 fw-semibold">
-          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#purpose">Propósito</a></li>
-          <li class="nav-item"><a class="nav-link" href="#logotype">Logo</a></li>
-          <li class="nav-item"><a class="nav-link" href="#colors">Color</a></li>
-          <li class="nav-item"><a class="nav-link" href="#typography">Tipografía</a></li>
-          <li class="nav-item"><a class="nav-link" href="#downloads">Assets</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#hero">01. Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#purpose">02. Propósito</a></li>
+          <li class="nav-item"><a class="nav-link" href="#logo-interactive">03. Logo Kinetic</a></li>
+          <li class="nav-item"><a class="nav-link" href="#colors">04. Color Grid</a></li>
+          <li class="nav-item"><a class="nav-link" href="#downloads">10. Assets</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Content Padding for Fixed Nav -->
   <div class="pt-5"></div>
 
-  <!-- 01. Hero Section -->
-  <section id="hero" class="bg-navy text-white text-center py-5 position-relative overflow-hidden">
-    <div class="container py-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-9">
-          <span class="badge bg-cyan text-dark fw-bold px-3 py-2 mb-3">VERSION 1.0</span>
-          <h1 class="display-3 fw-extrabold mb-3">Manual de Marca & Lineamientos</h1>
-          <p class="lead text-slate mb-4">Guía oficial de diseño visual, arquitectura de marca y recursos gráficos para <strong>TechNova</strong>.</p>
-          <a href="#purpose" class="btn btn-electric btn-lg px-4 me-2"><i class="bi bi-arrow-down-circle me-2"></i>Explorar Lineamientos</a>
-          <a href="#downloads" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-download me-2"></i>Descargar Assets</a>
-        </div>
+  <!-- 01. Hero Section con Efecto Parallax -->
+  <section id="hero" class="hero-parallax bg-navy text-white text-center py-5 position-relative">
+    <div class="container py-5 hero-content">
+      <span class="badge bg-cyan text-dark fw-bold px-3 py-2 mb-3 reveal-item">DROPBOX-STYLE EXPERIENCE</span>
+      <h1 class="display-2 fw-extrabold mb-3 reveal-item">Identidad Dinámica TechNova</h1>
+      <p class="lead text-slate mb-4 reveal-item">Desplázate hacia abajo para ver cómo la marca cobra vida a través del scroll interactivo.</p>
+      <div class="scroll-indicator mt-4 reveal-item">
+        <i class="bi bi-mouse text-electric fs-1 animated-bounce"></i>
+        <p class="small text-slate mt-2">Haz scroll para ensamblar la marca</p>
       </div>
     </div>
   </section>
 
-  <!-- 02. Propósito y Valores -->
+  <!-- 02. Propósito con Tarjetas Bento Grid -->
   <section id="purpose" class="py-5 container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6">
-        <span class="text-electric fw-bold text-uppercase fs-7">02. Identidad</span>
-        <h2 class="display-6 fw-bold mb-3">Misión y Eslogan</h2>
-        <p class="text-muted lead">"Tecnología que conecta tu mundo"</p>
-        <p>TechNova es una tienda de tecnología enfocada en acercar dispositivos innovadores y hardware de alto rendimiento a estudiantes, profesionales y creadores de contenido, garantizando autenticidad, respaldo y asesoría especializada.</p>
+    <div class="text-center mb-5 reveal-item">
+      <span class="text-electric fw-bold text-uppercase fs-7">02. Mantenimiento del Sistema</span>
+      <h2 class="display-6 fw-bold">Propósito & Pilares Visuales</h2>
+    </div>
+    
+    <div class="row g-4 bento-grid">
+      <div class="col-lg-8 reveal-item">
+        <div class="p-5 bg-navy text-white rounded-4 shadow-lg h-100 bento-card">
+          <span class="badge bg-electric mb-3">Misión Principal</span>
+          <h3 class="display-6 fw-bold mb-3">"Tecnología que conecta tu mundo"</h3>
+          <p class="text-slate">Al igual que los grandes sistemas de diseño interactivo, TechNova integra hardware de alto nivel con un lenguaje estético fluido, limpio y responsivo.</p>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="card card-custom p-4 border-0 bg-white shadow-sm h-100">
-              <i class="bi bi-cpu fs-1 text-electric mb-2"></i>
-              <h5 class="fw-bold">Innovación</h5>
-              <p class="small text-muted mb-0">Catálogo siempre actualizado con lo último del mercado informático.</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card card-custom p-4 border-0 bg-white shadow-sm h-100">
-              <i class="bi bi-shield-check fs-1 text-cyan mb-2"></i>
-              <h5 class="fw-bold">Confianza</h5>
-              <p class="small text-muted mb-0">Garantía extendida y soporte técnico especializado.</p>
-            </div>
-          </div>
+      <div class="col-lg-4 reveal-item">
+        <div class="p-4 bg-light-section border rounded-4 shadow-sm h-100 bento-card d-flex flex-column justify-content-center">
+          <i class="bi bi-cpu fs-1 text-electric mb-2"></i>
+          <h4 class="fw-bold">Innovación Kinética</h4>
+          <p class="small text-muted mb-0">Componentes modulares adaptables a cualquier dispositivo.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 03. Logotipo y Construcción -->
-  <section id="logotype" class="py-5 bg-light-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="text-electric fw-bold text-uppercase fs-7">03. Estructuración</span>
-        <h2 class="display-6 fw-bold">Anatomía del Logotipo</h2>
-      </div>
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
-          <div class="p-5 bg-white rounded-3 shadow-sm text-center border">
-            <!-- Icono SVG embebido -->
-            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" class="mb-3">
-              <rect width="100" height="100" rx="20" fill="#0F172A"/>
-              <path d="M50 20L58 42L80 50L58 58L50 80L42 58L20 50L42 42L50 20Z" fill="#2563EB"/>
-              <circle cx="50" cy="50" r="6" fill="#06B6D4"/>
+  <!-- 03. SECCIÓN CLAVE: Ensamble de Logo por Scroll (Estilo Dropbox) -->
+  <section id="logo-interactive" class="py-5 bg-navy text-white position-relative overflow-hidden">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 reveal-item">
+          <span class="text-cyan fw-bold text-uppercase fs-7">03. Anatomía Kinética</span>
+          <h2 class="display-5 fw-bold mb-4">Construcción Geométrica</h2>
+          <p class="text-slate">El Isotipo **Nova** está formado por 4 cuadrantes vectoriales que representan expansión tecnológica. Al hacer scroll, la grilla ajusta los componentes hasta lograr la simetría perfecta.</p>
+          <div class="mt-4">
+            <span class="badge border border-cyan text-cyan p-2"><i class="bi bi-sliders me-2"></i>Ensamble dinámico por Scroll</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7 text-center position-relative mt-5 mt-lg-0">
+          <!-- Contenedor del Logo SVG Interactivo -->
+          <div id="logo-assembly-container" class="p-5 rounded-4 bg-dark-card border border-secondary shadow-lg">
+            <svg id="tech-nova-svg" width="220" height="220" viewBox="0 0 100 100" fill="none">
+              <!-- Pieza Norte (Sube/Baja con Scroll) -->
+              <path id="svg-piece-top" d="M50 10 L60 38 L50 48 L40 38 Z" fill="#2563EB"/>
+              <!-- Pieza Sur -->
+              <path id="svg-piece-bottom" d="M50 90 L60 62 L50 52 L40 62 Z" fill="#2563EB"/>
+              <!-- Pieza Este -->
+              <path id="svg-piece-right" d="M90 50 L62 60 L52 50 L62 40 Z" fill="#2563EB"/>
+              <!-- Pieza Oeste -->
+              <path id="svg-piece-left" d="M10 50 L38 60 L48 50 L38 40 Z" fill="#2563EB"/>
+              <!-- Núcleo Cyan Central -->
+              <circle id="svg-piece-center" cx="50" cy="50" r="8" fill="#06B6D4"/>
             </svg>
-            <h3 class="fw-bold text-navy mb-0">TECH<span class="text-electric">NOVA</span></h3>
-            <span class="text-muted fs-7">Grilla geométrica & Isotipo Nova</span>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-4 bg-white rounded-3 border shadow-sm mb-3">
-            <h5 class="fw-bold"><i class="bi bi-bounding-box me-2 text-electric"></i>Área de Reserva</h5>
-            <p class="small text-muted mb-0">Se debe mantener un margen libre equivalente al alto del icono isotipo (X) en los cuatro costados para evitar la interferencia de elementos gráficos o texto adyacente.</p>
-          </div>
-          <div class="p-4 bg-white rounded-3 border shadow-sm">
-            <h5 class="fw-bold"><i class="bi bi-arrows-angle-contract me-2 text-electric"></i>Tamaño Mínimo</h5>
-            <p class="small text-muted mb-0">Para mantener la legibilidad, la versión impresa no debe ser menor a <strong>25mm</strong> de ancho. En pantalla, no menor a <strong>120px</strong>.</p>
+            <h3 class="fw-bold mt-4 tracking-widest text-white">TECH<span class="text-electric">NOVA</span></h3>
+            <p id="assembly-status" class="small text-slate mb-0">Estado: <span class="text-cyan">Ensamblado al Scroll</span></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 04. Variaciones del Logo -->
-  <section id="variations" class="py-5 container">
-    <div class="text-center mb-5">
-      <span class="text-electric fw-bold text-uppercase fs-7">04. Adaptabilidad</span>
-      <h2 class="display-6 fw-bold">Variaciones de Marca</h2>
-    </div>
-    <div class="row g-4 text-center">
-      <div class="col-md-4">
-        <div class="p-4 border rounded-3 bg-white shadow-sm h-100">
-          <h6 class="fw-bold text-muted mb-4">Versión Principal</h6>
-          <h3 class="fw-bold text-navy my-4">TECH<span class="text-electric">NOVA</span></h3>
-          <span class="badge bg-light text-dark border">Uso preferencial en fondos claros</span>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded-3 bg-navy text-white shadow-sm h-100">
-          <h6 class="fw-bold text-slate mb-4">Versión Negativo</h6>
-          <h3 class="fw-bold text-white my-4">TECH<span class="text-cyan">NOVA</span></h3>
-          <span class="badge bg-dark text-white border border-secondary">Para banners y fondos oscuros</span>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded-3 bg-light shadow-sm h-100">
-          <h6 class="fw-bold text-muted mb-4">Monocromático</h6>
-          <h3 class="fw-bold text-dark my-4">TECHNOVA</h3>
-          <span class="badge bg-secondary text-white">Facturas y sellos corporativos</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 05. Usos Incorrectos -->
-  <section id="incorrect-uses" class="py-5 bg-light-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="text-electric fw-bold text-uppercase fs-7">05. Restricciones</span>
-        <h2 class="display-6 fw-bold">Usos Incorrectos</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-3 col-6">
-          <div class="p-4 border border-danger-subtle rounded-3 bg-white text-center shadow-sm">
-            <i class="bi bi-x-circle-fill text-danger fs-3 mb-2"></i>
-            <h6 class="fw-bold">No Distorsionar</h6>
-            <small class="text-muted d-block">Mantener la proporción de escala siempre fija.</small>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="p-4 border border-danger-subtle rounded-3 bg-white text-center shadow-sm">
-            <i class="bi bi-x-circle-fill text-danger fs-3 mb-2"></i>
-            <h6 class="fw-bold">No Rotar</h6>
-            <small class="text-muted d-block">El logotipo debe permanecer horizontal.</small>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="p-4 border border-danger-subtle rounded-3 bg-white text-center shadow-sm">
-            <i class="bi bi-x-circle-fill text-danger fs-3 mb-2"></i>
-            <h6 class="fw-bold">No Alterar Color</h6>
-            <small class="text-muted d-block">Usar únicamente la paleta cromática aprobada.</small>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="p-4 border border-danger-subtle rounded-3 bg-white text-center shadow-sm">
-            <i class="bi bi-x-circle-fill text-danger fs-3 mb-2"></i>
-            <h6 class="fw-bold">Sin Sombras</h6>
-            <small class="text-muted d-block">No aplicar biseles, resplandores ni sombras.</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 06. Paleta de Colores -->
+  <!-- 04. Paleta de Colores Interactiva -->
   <section id="colors" class="py-5 container">
-    <div class="text-center mb-5">
-      <span class="text-electric fw-bold text-uppercase fs-7">06. Colorimetría</span>
-      <h2 class="display-6 fw-bold">Paleta de Colores Oficial</h2>
+    <div class="text-center mb-5 reveal-item">
+      <span class="text-electric fw-bold text-uppercase fs-7">04. Muestras Cromáticas</span>
+      <h2 class="display-6 fw-bold">Paleta de Color Dinámica</h2>
     </div>
     <div class="row g-4">
-      <div class="col-md-3 col-6">
-        <div class="color-box bg-navy rounded-3 shadow-sm mb-2"></div>
-        <h6 class="fw-bold mb-0">Dark Navy</h6>
-        <p class="small text-muted mb-0">HEX: #0F172A<br>RGB: 15, 23, 42</p>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="color-box bg-electric rounded-3 shadow-sm mb-2"></div>
-        <h6 class="fw-bold mb-0">Electric Blue</h6>
-        <p class="small text-muted mb-0">HEX: #2563EB<br>RGB: 37, 99, 235</p>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="color-box bg-cyan rounded-3 shadow-sm mb-2"></div>
-        <h6 class="fw-bold mb-0">Cyan Green</h6>
-        <p class="small text-muted mb-0">HEX: #06B6D4<br>RGB: 6, 182, 212</p>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="color-box bg-neutral border rounded-3 shadow-sm mb-2"></div>
-        <h6 class="fw-bold mb-0">Neutral Gray</h6>
-        <p class="small text-muted mb-0">HEX: #F8FAFC<br>RGB: 248, 250, 252</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 07. Tipografía -->
-  <section id="typography" class="py-5 bg-light-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="text-electric fw-bold text-uppercase fs-7">07. Fuentes</span>
-        <h2 class="display-6 fw-bold">Sistema Tipográfico</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="p-4 bg-white border rounded-3 shadow-sm h-100">
-            <span class="badge bg-electric mb-2">Titulares & Headings</span>
-            <h3 class="font-heading fw-bold display-6">Poppins</h3>
-            <p class="text-muted small">Geo-métrica, moderna e impactante para títulos y promociones.</p>
-            <div class="p-3 bg-light rounded font-heading fs-5">
-              ABCDEFGHIJKLM NOPQRSTUVWXYZ<br>
-              abcdefghijklm nopqrstuvwxyz<br>
-              1234567890 (!@#$%)
-            </div>
+      <div class="col-md-3 col-6 reveal-item">
+        <div class="color-tile bg-navy rounded-4 p-4 text-white shadow-sm d-flex flex-column justify-content-between">
+          <span class="fw-bold">Dark Navy</span>
+          <div>
+            <code class="text-slate d-block">#0F172A</code>
+            <small>Fondo Principal</small>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="p-4 bg-white border rounded-3 shadow-sm h-100">
-            <span class="badge bg-navy mb-2">Cuerpo de Texto & UI</span>
-            <h3 class="fw-bold display-6">Inter</h3>
-            <p class="text-muted small">Diseñada para legibilidad alta en pantallas y descripciones de productos.</p>
-            <div class="p-3 bg-light rounded fs-5">
-              ABCDEFGHIJKLM NOPQRSTUVWXYZ<br>
-              abcdefghijklm nopqrstuvwxyz<br>
-              1234567890 (!@#$%)
-            </div>
+      </div>
+      <div class="col-md-3 col-6 reveal-item">
+        <div class="color-tile bg-electric rounded-4 p-4 text-white shadow-sm d-flex flex-column justify-content-between">
+          <span class="fw-bold">Electric Blue</span>
+          <div>
+            <code class="text-white-50 d-block">#2563EB</code>
+            <small>Acción e Isotipo</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 reveal-item">
+        <div class="color-tile bg-cyan rounded-4 p-4 text-dark shadow-sm d-flex flex-column justify-content-between">
+          <span class="fw-bold">Cyan Green</span>
+          <div>
+            <code class="text-dark-50 d-block">#06B6D4</code>
+            <small>Acentos & Highlights</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 reveal-item">
+        <div class="color-tile bg-light border rounded-4 p-4 text-dark shadow-sm d-flex flex-column justify-content-between">
+          <span class="fw-bold">Neutral Gray</span>
+          <div>
+            <code class="text-muted d-block">#F8FAFC</code>
+            <small>Superficie UI</small>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 08. Iconografía -->
-  <section id="iconography" class="py-5 container">
-    <div class="text-center mb-5">
-      <span class="text-electric fw-bold text-uppercase fs-7">08. Iconos</span>
-      <h2 class="display-6 fw-bold">Estilo de Iconografía</h2>
-    </div>
-    <div class="row g-4 text-center">
-      <div class="col-md-3 col-6">
-        <div class="p-4 border rounded-3 bg-white shadow-sm">
-          <i class="bi bi-laptop text-electric display-5"></i>
-          <h6 class="fw-bold mt-3">Hardware</h6>
-          <small class="text-muted">Línea limpia 2px stroke</small>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="p-4 border rounded-3 bg-white shadow-sm">
-          <i class="bi bi-truck text-electric display-5"></i>
-          <h6 class="fw-bold mt-3">Envíos</h6>
-          <small class="text-muted">Esquinas sutilmente redondeadas</small>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="p-4 border rounded-3 bg-white shadow-sm">
-          <i class="bi bi-credit-card text-electric display-5"></i>
-          <h6 class="fw-bold mt-3">Pagos</h6>
-          <small class="text-muted">Estilo minimalista</small>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="p-4 border rounded-3 bg-white shadow-sm">
-          <i class="bi bi-headset text-electric display-5"></i>
-          <h6 class="fw-bold mt-3">Soporte</h6>
-          <small class="text-muted">Proporción 1:1</small>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 09. Fotografía -->
-  <section id="photography" class="py-5 bg-light-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="text-electric fw-bold text-uppercase fs-7">09. Imagen Visual</span>
-        <h2 class="display-6 fw-bold">Guía Fotográfica</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="p-4 bg-white border rounded-3 shadow-sm h-100">
-            <h5 class="fw-bold"><i class="bi bi-camera me-2 text-electric"></i>Fotografía de Producto</h5>
-            <p class="text-muted">Fondos neutros (grises o blancos), iluminación de estudio brillante y enfoque nítido sobre los acabados de los dispositivos tecnológicos.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-4 bg-white border rounded-3 shadow-sm h-100">
-            <h5 class="fw-bold"><i class="bi bi-person-workspace me-2 text-electric"></i>Fotografía Estilo de Vida (Lifestyle)</h5>
-            <p class="text-muted">Usuarios interactuando en entornos reales, escritorios minimalistas, luces LED ambientales azules/neón y tonalidades frías.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10. Descargas -->
+  <!-- 10. Descarga de Assets -->
   <section id="downloads" class="py-5 bg-navy text-white text-center">
-    <div class="container py-4">
-      <span class="text-cyan fw-bold text-uppercase fs-7">10. Recursos</span>
-      <h2 class="display-6 fw-bold mb-3">Kit de Prensa & Recursos</h2>
-      <p class="text-slate mb-4">Obtén los vectores originales, manuales en PDF y recursos tipográficos oficiales de TechNova.</p>
-      <div class="d-flex justify-content-center gap-3 flex-wrap">
-        <button class="btn btn-electric btn-lg px-4" onclick="alert('Iniciando descarga de vectores...')"><i class="bi bi-file-type-svg me-2"></i>Logos en SVG / PNG</button>
-        <button class="btn btn-outline-light btn-lg px-4" onclick="alert('Descargando Brandbook PDF...')"><i class="bi bi-file-pdf me-2"></i>Manual PDF</button>
-      </div>
+    <div class="container py-4 reveal-item">
+      <h2 class="display-6 fw-bold mb-3">Obtén el Brandkit Oficial</h2>
+      <p class="text-slate mb-4">Descarga las piezas vectoriales dinámicas para producción gráfica.</p>
+      <button class="btn btn-electric btn-lg px-5 py-3 rounded-pill" onclick="alert('Descargando activos dinámicos SVG...')"><i class="bi bi-download me-2"></i>Descargar Kit SVG (TechNova)</button>
     </div>
   </section>
 
   <footer class="bg-dark text-slate text-center py-4 border-top border-secondary">
     <div class="container">
-      <small>TechNova Brandbook © 2026. Proyecto desarrollado para tienda de tecnología.</small>
+      <small>TechNova Interactive Brandbook © 2026</small>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
+  <!-- Custom Interactive JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
